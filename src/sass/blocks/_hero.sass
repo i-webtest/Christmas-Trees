@@ -1,0 +1,36 @@
+.hero
+  background-color: var(--main-bg-color)
+  color: var(--main-color)
+  &__container
+    display: flex
+    align-items: center
+  &__left
+    margin-left: -155px
+    margin-right: 110px
+    line-height: 0
+  &__right
+    max-width: 630px
+  &__title
+    margin-bottom: 50px
+  &__description
+    font-size: 26px
+    line-height: 140%
+    margin-bottom: 24px
+    max-width: 530px
+  &__down-img
+    margin-bottom: 13px
+    transition: filter .3s ease-in
+  &__down
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 113px
+    margin: 0 auto
+    & span
+      display: block
+      text-align: center
+      font-weight: 700
+      line-height: 130%
+      letter-spacing: 0.04em
+    &:hover .hero__down-img
+      filter: drop-shadow(4px 7px 20px #003227)

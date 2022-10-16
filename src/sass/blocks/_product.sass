@@ -1,0 +1,65 @@
+.product
+  padding: 80px 0
+  color: var(--main-color)
+  &:nth-child(3n)
+    background-color: var(--two-color)
+  &:nth-child(3n + 1)
+    background-color: var(--one-color)
+  &:nth-child(3n + 2)
+    background-color: var(--main-bg-color)
+  &:nth-child(even) .product__container
+    flex-direction: row-reverse
+  &__container
+    display: flex
+    justify-content: space-between
+    gap: 30px
+  &__content
+    padding-top: 56px
+    max-width: 520px
+  &__title
+    margin-bottom: 30px
+  &__features
+    line-height: 130%
+    margin-bottom: 50px
+  &__description
+    font-size: 24px
+    line-height: 140%
+    max-width: 500px
+    margin-bottom: 70px
+  &__button
+    display: block
+    font-weight: 700
+    font-size: 18px
+    line-height: 130%
+    letter-spacing: 0.04em
+    color: var(--main-color)
+    border-radius: 10px
+    border: 2px solid transparent
+    padding: 14px 36px
+    background-color: transparent
+    outline: none
+    &:hover
+      background-color: var(--main-color)
+      border-color: var(--main-color)
+      color: var(--three-color)
+    &:active
+      background-color: var(--second-bg-color)
+      color: var(--main-color)
+      border-color: var(--second-bg-color)
+      box-shadow: 0px 2px 6px rgba(45, 36, 1, 0.51)
+    &-wrapper
+      display: flex
+      gap: 36px
+    &_order
+      background-color: var(--second-bg-color)
+      &:focus
+        outline: 2px solid var(--second-color)
+        border-color: transparent
+    &_more
+      border-color: var(--second-bg-color)
+      &:focus
+        outline: 2px solid var(--main-color)
+        border-color: transparent
+  &__picture
+    width: calc( 50% - 15px )
+    border-radius: 16px
